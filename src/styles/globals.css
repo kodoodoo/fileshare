@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('./font.css');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --toastify-icon-color-error: #fff !important;
+  --toastify-icon-color-success: #fff !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  font-family: 'Aeonik';
+  box-sizing: 'border-box';
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #e0e0e4;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #e0e0e4;
+}
+
+.Toastify__progress-bar {
+  opacity: 0 !important;
+}
+
+.Toastify__close-button {
+  display: none !important;
+}
